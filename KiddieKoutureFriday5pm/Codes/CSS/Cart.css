@@ -1,0 +1,114 @@
+/* 
+
+Done by: Kadedra Mason
+ID: 2304879
+
+ */
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Times New Roman, sans-serif;
+    background-color: white;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: 500;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    text-align: right;
+}
+
+#checkout, #clear-cart, #close-cart {
+    background-color: #fbb72c;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 50px;
+}
+
+#checkout:hover, #clear-cart:hover {
+    background-color: #e2a40a;
+}
+
+button.remove-item {
+    background-color: #ff4d4d;
+    color: white;
+    font-family: Times New Roman;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75rem; /* Smaller heading size */
+    }
+
+    th, td {
+        font-size: 14px; /* Smaller text for table */
+        padding: 10px; /* Reduced padding */
+    }
+
+    #checkout, #clear-cart, #close-cart {
+        padding: 8px 12px; /* Smaller buttons */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    button.remove-item {
+        padding: 3px 5px; /* Smaller padding for remove button */
+        font-size: 12px; /* Smaller font size for remove button */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Even smaller heading size */
+    }
+
+    th, td {
+        font-size: 12px; /* Smaller text for table */
+        padding: 8px; /* Further reduced padding */
+    }
+
+    #checkout, #clear-cart, #close-cart {
+        padding: 6px 10px; /* Smaller buttons */
+        font-size: 12px; /* Smaller font size */
+    }
+
+    button.remove-item {
+        padding: 1px 1px; /* Even smaller padding for remove button */
+        font-size: 4px; /* Smaller font size for remove button */
+    }
+}

@@ -1,0 +1,119 @@
+* {
+  margin: 0; /* Reset default margin for all elements */
+  padding: 0; /* Reset default padding for all elements */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+html, body {
+  width: 100%; /* Ensure full width for the body */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+ul {
+  list-style-type: none; /* Remove default bullet points from list */
+  margin: 0; /* Reset margin for the unordered list */
+  padding: 0; /* Reset padding for the unordered list */
+  overflow: hidden; /* Hide overflow content */
+  background-color: #dddddd; /* Set background color for the navigation bar */
+  position: fixed; /* Fix the navigation bar to the top */
+  width: 100%; /* Ensure the navbar takes the full width */
+  top: 0; /* Position the navbar at the top of the page */
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 15px 30px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+li a:hover {
+  background-color: #007BFF;
+}
+
+.logo {
+  width: 100px; /* Adjust logo size */
+  padding: 14px 30px;
+  height: auto;
+}
+
+
+
+body {
+    font-family: Times New Roman, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Overlay Content */
+.overlay-content {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Perfect centering */
+  color: white;
+  text-align: center;
+  
+  /* Ensure the overlay takes full width */
+  width: 100%; /* Set the overlay to be 100% width */
+  padding: 20px; /* Add padding for inner spacing */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: background for better visibility */
+  border-radius: 0px; /* Optional: rounded corners */
+}
+
+.overlay-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.overlay-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Button Styling in the Overlay */
+.overlay-button {
+  font-family: Times New Roman;
+  padding: 15px 30px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Ensure Button and Text are centered */
+.overlay-content a {
+  display: inline-block;
+}
+
+div {
+  background-color: #FFF4A3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .overlay-content h1 {
+    font-size: 32px;
+  }
+
+  .overlay-content p {
+    font-size: 18px;
+  }
+
+  .overlay-button {
+    font-size: 14px;
+  }
+}

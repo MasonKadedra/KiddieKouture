@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Done by: Khyle Dixon -->
+<!-- ID: 1403921 -->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Dashboard</title>
+		<link rel="stylesheet" href="CSS/Dashboard.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	</head>
+	<body>
+		<ul>
+			<li><img src="Assets/LOGO.png" alt="Logo" class="logo"></li>
+			<li><a href="Dashboard.html">Dashboard</a></li>
+			<li><a href="Index.html">Home</a></li>
+			<li><a href="About Us.html">About Us</a></li>
+			<li><a href="Log in.html">Products</a></li>
+			<li><a href="Contact Us.html">Contact Us</a></li>
+			<li style="float:right"><a href="Log in.html">Log in/Sign Up</a></li>
+		</ul>
+		<br>
+		<br>
+		<div id="dashboard">
+			<h2>Dashboard</h2>
+			<div class="dashboard-section">
+				<h2>Invoice Management</h2>
+				<button id="show-invoices" class="btn">Show All Invoices</button>
+				<button id="get-user-invoices" class="btn">Get User Invoices</button>
+			</div>
+			
+			<!-- Added Invoice Display Section -->
+			<div id="invoice-display-container">
+				<h3>Invoices</h3>
+				<div id="invoice-container">
+					<!-- Invoices will be dynamically loaded here -->
+				</div>
+			</div>
+
+			<div id="gender-chart-container">
+				<h3>Gender Frequency</h3>
+				<div id="gender-chart"></div>
+			</div>
+
+			<div id="age-group-chart-container">
+				<h3>Age Group Frequency</h3>
+				<div id="age-group-chart"></div>
+			</div>
+		</div>
+
+		<script src="Javascript/Dashboard.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+	</body>
+</html>

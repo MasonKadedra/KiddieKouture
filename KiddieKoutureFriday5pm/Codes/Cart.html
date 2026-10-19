@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Done by: Kadedra Mason --!>
+<!-- ID: 2304879 --!>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Cart </title>
+		<link rel="stylesheet" href="CSS/Cart.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	</head>
+	<body>
+
+		<!-- Cart Section -->
+		<section id="cart">
+			<h2>Your Cart</h2>
+			<table id="cart-items">
+				<thead>
+					<tr>
+						<th>Product</th>
+						<th>Price</th>
+						<th>Quantity</th>
+						<th>Subtotal</th>
+						<th>Remove</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- Cart items will be dynamically added here -->
+				</tbody>
+			</table>
+			<div class="cart-summary">
+				<p>Subtotal: $<span id="cart-subtotal">0.00</span></p>
+				<p>Tax: $<span id="cart-tax">0.00</span></p>
+				<p>Total: $<span id="cart-total">0.00</span></p>
+			</div>
+			
+			<!-- Action Buttons -->
+			<div class="cart-actions">
+				<button id="clear-cart">Clear All</button>
+				<button id="checkout">Check Out</button>
+				<button id="close-cart" onclick= "closeCart()">Close</button>
+			</div>
+		</section>
+
+		<script src = "Javascript/Cart.js"></script>
+	</body>
+</html>
+
+
+

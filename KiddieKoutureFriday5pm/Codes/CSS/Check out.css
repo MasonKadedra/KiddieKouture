@@ -1,0 +1,162 @@
+body {
+  font-family: Times New Roman;
+  font-size: 17px;
+  padding: 8px;
+  background-image: url('../Assets/Cart.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  font-size: 40px;
+}	
+	
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  flex: 25%;
+}
+
+.col-50 {
+  flex: 50%;
+}
+
+.col-75 {
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: white;
+  padding: 5px 20px 15px 20px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid rgb(180, 180, 180);
+}
+
+input[type=email] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid rgb(180, 180, 180);
+}
+
+input[type=number] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid rgb(180, 180, 180);
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #007BFF;
+  font-family: Times New Roman;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.button {
+  background-color: #007BFF;
+  font-family: Times New Roman;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #1E90FF;
+}
+
+#checkout, #cancel {
+  display: inline-block; /* Ensures buttons are inline */
+  width: 150px; /* Set a fixed width for consistency */
+  height: 50px; /* Set a fixed height for consistency */
+  padding: 0; /* Reset padding to align the text uniformly */
+  text-align: center;
+  line-height: 50px; /* Align text vertically for equal height */
+  font-size: 16px; /* Ensure the font size is consistent */
+  margin-right: 10px; /* Add spacing between buttons */
+  text-decoration: none;
+}
+
+#checkout {
+  background-color: #1E90FF; /* Blue background for Confirm */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+}
+
+#checkout:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+#cancel {
+  background-color: #B22222; /* Red background for Cancel */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+}
+
+#cancel:hover {
+  background-color: #800000; /* Darker red on hover */
+}
+
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}

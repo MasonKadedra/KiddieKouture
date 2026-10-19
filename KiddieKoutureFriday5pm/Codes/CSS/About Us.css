@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+html, body {
+  width: 100%; /* Ensure full width for the body */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+  margin: 0; /* Ensure no default margin */
+  font-family: Times New Roman, sans-serif;
+  padding-top: 50px; /* Adjust this value to create space below the navbar */
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dddddd;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+li a {
+  font-family: Times New Roman, sans-serif;
+  display: block;
+  padding: 15px 30px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+li a:hover {
+  background-color: #007BFF;
+}
+
+.logo {
+  width: 100px; /* Adjust logo size */
+  padding: 14px 30px;
+  height: auto;
+}
+
+.about-section {
+  width: 100%;
+  height: 50vh; /* 50% of the viewport height */
+  overflow: hidden; /* Prevent scrolling issues */
+}
+
+.about-section .about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image scales correctly */
+}
+
+h1{
+   text-align:center;
+   color:#1EADFF;
+   
+}
+
+hr{
+   width:15%;
+   border-top:2px solid #000;
+   background-color:transperant;
+   border-bottom:none;
+   margin-bottom:50px;
+}

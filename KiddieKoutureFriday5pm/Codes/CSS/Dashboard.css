@@ -1,0 +1,286 @@
+/* 
+
+Done by: Khyle Dixon
+ID: 1403921
+
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+html, body {
+  width: 100%; /* Ensure full width for the body */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+  margin: 0; /* Ensure no default margin */
+  font-family: Times New Roman, sans-serif;
+  padding-top: 50px; /* Adjust this value to create space below the navbar */
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dddddd;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+li a {
+  font-family: Times New Roman, sans-serif;
+  display: block;
+  padding: 15px 30px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+li a:hover {
+  background-color: #007BFF;
+}
+
+.logo {
+  width: 100px; /* Adjust logo size */
+  padding: 14px 30px;
+  height: auto;
+}
+
+/* General styles for the dashboard */
+.dashboard-section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section heading */
+.dashboard-section h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Buttons inside the section */
+.dashboard-section .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #007bff; /* Blue background for primary button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.dashboard-section .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Alternative button styles for specific actions */
+.dashboard-section .btn.secondary {
+    background-color: #6c757d; /* Gray background for secondary button */
+}
+
+.dashboard-section .btn.secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Button alignment */
+.dashboard-section .btn-container {
+    text-align: center;
+}
+
+/* Invoice Display Section */
+#invoice-display-container {
+  background-color: #fff; /* White background for the container */
+  padding: 20px; /* Padding around the content */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 30px; /* Space below the section */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center; /* Center-align text within the section */
+}
+
+#invoice-display-container h3 {
+  font-size: 1.5em; /* Adjusted font size */
+  color: #333; /* Darker text color for better readability */
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+/* Invoice Table Styles */
+#invoice-container {
+  max-width: 100%; /* Ensure responsiveness */
+  overflow-x: auto; /* Enable horizontal scrolling for large tables */
+  margin: 0 auto; /* Center the content horizontally */
+  padding-top: 10px; /* Space above the table */
+}
+
+/* Invoice Table */
+#invoice-container table {
+  width: 100%; /* Full width of the container */
+  border-collapse: collapse; /* Remove space between table cells */
+  margin-bottom: 20px; /* Space below the table */
+}
+
+#invoice-container th, #invoice-container td {
+  padding: 12px 15px; /* Padding inside cells */
+  text-align: left; /* Align text to the left */
+  border: 1px solid #ddd; /* Light border for cell separation */
+}
+
+#invoice-container th {
+  background-color: #007bff; /* Blue background for table headers */
+  color: #fff; /* White text for headers */
+  font-weight: bold; /* Emphasize headers */
+}
+
+#invoice-container tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light gray for alternate rows */
+}
+
+#invoice-container tr:hover {
+  background-color: #f1f1f1; /* Slightly darker gray on hover */
+}
+
+/* Responsive Design for Invoice Section */
+@media (max-width: 768px) {
+  #invoice-container table {
+    font-size: 0.9em; /* Slightly smaller font on smaller screens */
+  }
+
+  #invoice-container th, #invoice-container td {
+    padding: 8px 10px; /* Reduce padding for smaller screens */
+  }
+}
+
+
+/* Overall Dashboard Layout */
+#dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Header Styling */
+#dashboard h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Container for each chart section */
+#gender-chart-container, #age-group-chart-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#gender-chart-container h3, #age-group-chart-container h3 {
+  font-size: 1.5em;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Bar chart styles */
+#gender-chart div, #age-group-chart div {
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+  margin: 8px 0;
+  border-radius: 5px;
+  transition: width 0.3s ease; /* Smooth transition for width change */
+}
+
+#gender-chart div {
+  background-color: #4e73df; /* Blue for gender */
+  color: white;
+}
+
+#age-group-chart div {
+  background-color: #1cc88a; /* Green for age group */
+  color: white;
+}
+
+/* Responsive Design: Make the dashboard mobile-friendly */
+@media (max-width: 768px) {
+  #dashboard {
+    padding: 15px;
+  }
+
+  #gender-chart-container, #age-group-chart-container {
+    padding: 15px;
+  }
+
+  #gender-chart div, #age-group-chart div {
+    font-size: 0.9em;
+  }
+}
+
+/* General Button Styling */
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: all 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover Effect */
+button:hover {
+    background-color: #45a049; /* Slightly darker green */
+    transform: translateY(-2px); /* Lift effect */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+/* Focus Outline */
+button:focus {
+    outline: 2px solid #76c893; /* Light green outline */
+}
+
+/* Disabled Button Styling */
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+
+@media (max-width: 600px) {
+    .dashboard-section .btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

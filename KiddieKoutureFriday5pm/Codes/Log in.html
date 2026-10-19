@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Done by: Shafeeq Micthell -->
+<!-- ID:  -->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Log in </title>
+		<link rel="stylesheet" href="CSS/Log in.css">
+	</head>
+	<body background="Assets/Background1.webp">
+	   <ul>
+		   <li><img src="Assets/LOGO.png" alt="Logo" class="logo"></li>
+		   <li> <a href="Dashboard.html"> Dashboard </a> </li>
+		   <li><a href="Index.html">Home</a></li>
+		   <li><a href="About Us.html">About Us</a></li>
+		   <li><a href="Log in.html">Products</a></li>
+		   <li><a href="Contact Us.html">Contact Us</a></li>
+		   <li style="float:right"><a href="Log in.html">Log in/Sign Up</a></li>
+	   </ul>
+	   </br> </br>
+	   <div class="container">
+		   <h1> Login </h1>
+		   <form id="loginForm">
+			   <label for="trn"> TRN: </label>
+			   <input type="text" id="trn" required>
+
+			   <label for="password">Password:</label>
+			   <input type="password" id="password" required minlength="8">
+
+			   <button type="submit" id = "submitButton">Login</button>
+			   <button type="button" id="cancelButton">Cancel</button>
+		   </form>
+		   <p id="error-message" class="error-message"></p>
+		   <p><a href="ResetPassword.html">Forgot your password?</a></p><br>
+		   <p><a href="Register.html">New here? Register</a></p>
+	   </div>
+	   <script src="Javascript/Log in.js"></script>
+	</body>
+</html>

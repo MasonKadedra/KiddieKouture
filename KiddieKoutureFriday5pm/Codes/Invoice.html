@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Done by: Lemar Angel  --!>
+<!-- ID:  --!>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+		<link rel="stylesheet" href="CSS/Invoice.css">
+		<title> Invoice </title>
+	</head>
+	
+	<body>
+	<a href = "Index.html"> HOME </a>
+		<div class="invoice-container">
+			<h1>Invoice</h1>
+			<p>Company Name: KIDDIE KOUTURE <span id="company-name"></span></p>
+			<p>Date: <span id="invoice-date"></span></p>
+			<p>Invoice Number: <span id="invoice-number"></span></p>
+
+			<h2>Customer Details</h2>
+			<p>Name: <span id="customer-name"></span></p>
+			<p>TRN: <span id="customer-trn"></span></p>
+			<p>Email: <span id="customer-email"></span></p>
+			<p>Address: <span id="customer-address"></span></p>
+
+			<h2>Products</h2>
+			<table class="product-table">
+				<thead>
+					<tr>
+						<th>Product Name</th>
+						<th>Quantity</th>
+						<th>Price</th>
+						<th>Total</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+
+			<h3>Summary</h3>
+			<p>Subtotal: $<span id="cart-subtotal"></span></p>
+			<p>Tax (10%): $<span id="tax-amount"></span></p>
+			<p>Total: $<span id="total-amount"></span></p>
+
+			<button id="download-button">Download Invoice</button>
+		</div>
+		 </br> </br>
+		<script src="Javascript/Invoice.js"></script>
+	</body>
+</html>

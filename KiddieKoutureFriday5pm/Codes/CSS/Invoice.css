@@ -1,0 +1,151 @@
+/* 
+
+Done by: Lemar Angel
+ID:
+
+ */
+
+/* General Styling */
+body {
+    font-family: Times New Roman, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFE0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top: 40px;
+}
+
+/* Invoice Container */
+.invoice-container {
+    width: 100%;
+    max-width: 800px; /* Restrict max width */
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #1779ba;
+    text-align: center;
+    margin: 0 0 20px 0;
+    border-bottom: 2px solid #1779ba;
+    padding-bottom: 10px;
+}
+
+/* Invoice Details */
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+#invoice-date, #invoice-number, #company-name {
+    font-weight: bold;
+    color: #1779ba;
+}
+
+/* Customer Details */
+h2 {
+    font-size: 1.5rem;
+    color: #0b386f;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.customer-details p {
+    margin: 5px 0;
+}
+
+/* Product Table */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.product-table th,
+.product-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.product-table th {
+    background-color: #1779ba;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.product-table td {
+    background-color: #f9f9f9;
+}
+
+.product-table tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.product-table tr:hover {
+    background-color: #f2f9fc;
+}
+
+/* Summary */
+h3 {
+    font-size: 1.2rem;
+    color: #0b386f;
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.invoice-summary {
+    margin: 20px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: right;
+}
+
+.invoice-summary p {
+    margin: 5px 0;
+}
+
+.invoice-summary p strong {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Download Button */
+#download-button {
+    display: block;
+    width: 200px;
+    margin: 30px auto 0;
+    background-color: #1779ba;
+    color: #fff;
+    padding: 12px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#download-button:hover {
+    background-color: #0056b3;
+}
